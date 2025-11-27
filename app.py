@@ -70,8 +70,7 @@ if not st.session_state.setup_complete:
 
 
 if st.session_state.setup_complete and not st.session_state.feedback_shown and not st.session_state.chat_complete:
-    st.info("Start Introducing By Yourself",
-     icon = "yep"
+    st.info("Start Introducing By Yourself"
      )
      
     client = OpenAI(api_key = st.secrets["openai_api_key"])
